@@ -117,7 +117,7 @@ end
 fid = fopen([outdir 'LLt'],'r');
 if fid > 0
     LLt = fread(fid,inf,'double');
-    LLt = reshape(LLt,num_models+1, []]);
+    LLt = reshape(LLt,num_models+1, []);
     fclose(fid);
     LLtset = 1;
     modout.Lht = LLt(1:num_models,:);
